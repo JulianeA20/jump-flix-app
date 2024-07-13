@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.menu {
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo a img {
+  margin-left: 40px;
+  width: 60px;
+}
+
+.logo h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  color: white;
+  margin-left: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.btn-login {
+  margin-right: 20px;
+  padding: 10px 20px;
+  color: #d1060a;
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  box-shadow: black 2px 2px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  transition: .6s;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  box-shadow: #d1060a 2px 2px 20px;
+  transform: scale(1.1);
+}
+
+.banner img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 101%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+.overflow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100.5%;
+  backdrop-filter: blur(7px);
+  z-index: 1;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container p {
+  color: white;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.container a {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-cadastro {
+  position: absolute;
+  margin-top: 20px;
+  width: 150px;
+  padding: 10px;
+  color: white;
+  background-color: #d1060a;
+  border-radius: 10px;
+  border: none;
+  box-shadow: black 2px 2px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  transition: .6s;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.btn-cadastro:hover {
+  background-color: white;
+  color: #d1060a;
+  box-shadow: #d1060a 2px 2px 20px;
+  transform: scale(1.1);
+}
+
+footer {
+  padding: 10px;
+  width: 100%;
+  height: 5vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer p a {
+  text-decoration: none;
+  color: white;
+}
+
+footer p {
+  z-index: 2;
+}

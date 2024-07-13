@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: #0f0f0f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+header img {
+  position: absolute;
+  width: 60px;
+  right: 50px;
+  top: 20px;
+}
+
+.voltar a {
+  color: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.voltar a ion-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.form-group {
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: translateY(40%);
+}
+
+.form-group h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: -150px;
+}
+
+#loginForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+#loginForm input {
+  width: 25vw;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: transparent;
+  color: white;
+  border-radius: 20px;
+  border: solid 2px #d1060a;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  transition: .4s;
+}
+
+#loginForm input:focus {
+  content: '';
+  outline: none;
+  box-shadow: #d1060a 2px 2px 20px;
+}
+
+#loginForm button {
+  margin-top: 30px;
+  padding: 13px;
+  color: #d1060a;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  transition: .4s;
+}
+
+#loginForm button:hover {
+  transform: scale(1.1);
+}
+
+#loginForm a {
+  color: #d1060a;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+footer {
+  position: absolute;
+  font-size: 0.8em;
+  font-family: 'Poppins', sans-serif;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: auto;
+}
+
+footer p a {
+  text-decoration: none;
+  color: white;
+}
