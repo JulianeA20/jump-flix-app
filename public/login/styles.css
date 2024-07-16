@@ -12,12 +12,13 @@ html, body {
   color: white;
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 header img {
   position: absolute;
   width: 60px;
-  right: 50px;
+  right: 70px;
   top: 20px;
 }
 
@@ -29,7 +30,7 @@ header img {
   font-size: 16px;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
-  margin-left: 30px;
+  margin-left: 70px;
   margin-top: 30px;
 }
 
@@ -44,10 +45,12 @@ header img {
 }
 
 .form-group {
-  width: 100%;
-  top: 0;
-  left: 0;
-  transform: translateY(40%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  top: 50%;
 }
 
 .form-group h1 {
@@ -56,7 +59,7 @@ header img {
   justify-content: center;
   font-size: 2em;
   font-family: 'Poppins', sans-serif;
-  margin-bottom: -150px;
+  margin-bottom: 50px;
 }
 
 #loginForm {
@@ -64,7 +67,6 @@ header img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
 }
 
 #loginForm input {
@@ -74,11 +76,11 @@ header img {
   background-color: transparent;
   color: white;
   border-radius: 20px;
-  border: solid 2px #d1060a;
+  border: solid 1px #d1060a;
   font-size: 14px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  transition: .4s;
+  transition: .2s;
 }
 
 #loginForm input:focus {
@@ -98,6 +100,7 @@ header img {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   transition: .4s;
+  cursor: pointer;
 }
 
 #loginForm button:hover {
@@ -113,14 +116,27 @@ header img {
   margin-top: 20px;
 }
 
-footer {
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper ion-icon {
   position: absolute;
+  font-size: 17px;
+  top: 35%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer {
   font-size: 0.8em;
   font-family: 'Poppins', sans-serif;
-  bottom: 40px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
   margin-top: auto;
+  margin-bottom: 40px;
 }
 
 footer p a {

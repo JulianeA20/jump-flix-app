@@ -4,24 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JumpFlix - Login</title>
-  <link rel="shortcut icon" href="/public/assets/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="/public/login/styles.css">
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+  <div id="error-message" style="display: none;"></div>
   <header>
     <div class="voltar">
-      <a href="../index.html"><ion-icon name="arrow-back-outline"></ion-icon><p>Voltar</p></a>
+      <a href="../index.html">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+        <p>Voltar</p>
+      </a>
     </div>
-    <img src="/public/assets/logo-jf.png" alt="Logo">
+    <img src="../assets/logo-jf.png" alt="Logo">
   </header>
   <main>
     <div class="container"></div>
       <div class="form-group">
         <h1>Login</h1>
-        <form id="loginForm">
-          <input type="text" id="loginEmail" placeholder="Email" required>
-          <input type="password" id="loginPassword" placeholder="Senha" required>
-          <button type="submit">Fazer login</button>
+        <form id="loginForm" action="/login" method="POST">
+          <input type="email" id="email" placeholder="Email">
+          <div class="password-wrapper">
+            <input type="password" id="password" placeholder="Senha">
+            <ion-icon name="eye-off-outline" id="togglePassword"></ion-icon>
+          </div>
+          <button type="submit">Entrar</button>
           <a href="">Esqueci minha senha</a>
         </form>
       </div>
@@ -34,5 +41,6 @@
   </footer>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>

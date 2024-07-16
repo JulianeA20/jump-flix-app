@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 html, body {
@@ -35,39 +36,45 @@ html, body {
   font-size: 30px;
 }
 
-.input {
-  width: 250px;
-  padding: 15px 0px 15px 20px;
-  margin-left: -240px;
-  border-radius: 9999px;
+.buscar {
+  max-width: 80%;
+  position: relative;
+  top: 170px;
+  margin: 0 auto;
+}
+
+.buscar input {
+  width: 100%;
+  height: 45px;
+  border-radius: 15px;
   border: 2px solid #d1060a;
-  outline: none;
-  opacity: 0.8;
-  background-color: #57555563;
+  padding: 0 20px;
   color: #fff;
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
-  transition: all .2s ease-in-out;
+  background-color: transparent;
+  font-weight: 600;
+  padding-right: 40px;
 }
 
-.input:focus {
-  opacity: 1;
-  width: 350px;
+.buscar input:focus {
+  content: '';
+  outline: none;
+
 }
-
-
 
 .buscar button {
+  position: absolute;
+  right: 10px; /* Posicione o botão à direita do input */
+  top: 50%;
+  transform: translateY(-50%);
   border-radius: 9999px;
   border: none;
   color: black;
   width: 30px;
   height: 30px;
   font-size: 20px;
-  position: relative;
-  top: 50%;
-  right: 10px;
-  transform: translate(0, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .user a ion-icon {
@@ -83,7 +90,6 @@ html, body {
   text-decoration: none;
   font-size: 12px;
   font-weight: 600;
-  font-family: 'Poppins', sans-serif;
 }
 
 .logo a img {

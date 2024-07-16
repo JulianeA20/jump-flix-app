@@ -5,8 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registre-se - JumpFlix</title>
   <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
+  <div id="error-message"></div>
+  <header>
+    <div class="voltar">
+      <a href="../index.html">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+        <p>Voltar</p>
+      </a>
+    </div>
+  </header>
+  <main>
+    <div class="banner">
+      <img src="../assets/wallpaper-jf.png" alt="">
+    </div>
+    <div class="blur"></div>
+    <div class="container">
+       <h1>Registre-se</h1>
+       <div class="form-container">
+        <form id="registerForm">
+          <div class="form-group">
+            <input type="text" placeholder="Nome" id="name">
+            <input type="email" placeholder="Email" id="email">
+            <div class="password-wrapper">
+              <input type="password" id="senha" placeholder="Senha">
+              <ion-icon name="eye-off-outline" id="togglePassword1"></ion-icon>
+            </div>
+            <div class="password-wrapper">
+              <input type="password" id="confirmeSenha" placeholder="Confirme a senha">
+              <ion-icon name="eye-off-outline" id="togglePassword2"></ion-icon>
+            </div>
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+       </div>
+    </div>
+  </main>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
